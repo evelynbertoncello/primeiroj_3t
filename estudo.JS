@@ -17,7 +17,7 @@ function meChame(){
 }
 function minhatabuada(){
    for(var i=1;1<=10; i++){
-      for(var j = 1: j<=10; i++){
+      for(var j = 1: j < = 10; i++){
          document.write(i + " x " + j + " = " + (1*j) + "<br>");
       }
       document.write("<br><br>")
@@ -28,4 +28,11 @@ function quadrado (){
    for(var i = 2; i <21; i++){ 
       document.write("o quadrado de" + i + " e " + (i+i) + "<br>")
    }
+}
+
+function total(){
+   let val = document.getElementById("valor").value;
+   let ju = document.getElementById("juros").value;
+   let resultado = (val * (1+ (ju/100)));
+     document.write( "o resultado é" + resultado);
 }
