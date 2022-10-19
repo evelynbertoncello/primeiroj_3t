@@ -33,8 +33,18 @@ function quadrado (){
 function total(){
    let val = document.getElementById("valor").value;
    let ju = document.getElementById("juros").value;
-   let resultado = (val * (1+ (ju/100)));
-     document.write( "o resultado é" + resultado);
+
+if(!Number(val)){ 
+   alert("o valor deve ser um numero");
+   document.getElementById("valor").value = "";
+   document.getElementById("valor").focus = "";
+   
+   return
+
+   if(!Number(ju)){ 
+      alert("o valor deve ser um numero")
+       return
+
 }
 
 function soma (){
@@ -61,4 +71,3 @@ function mutiplicaçao (){
    let r = ( Number (v1) * Number(v2));
    document.getElementById("resultado"). innerHTML = r;
 }
-
